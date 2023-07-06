@@ -64,8 +64,6 @@ public class User {
 		this.posts = posts;
 	}
 
-
-
     public void setBirthDate(LocalDate birthaDate) {
         this.birthDate = birthaDate;
     }

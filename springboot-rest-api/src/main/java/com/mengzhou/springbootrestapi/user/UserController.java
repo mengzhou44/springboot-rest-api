@@ -41,7 +41,7 @@ public class UserController {
     }
 
     @PostMapping("/users")
-    public ResponseEntity<User> User(@Valid @RequestBody User user) {
+    public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
         User saved= repository.save(user);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
 						.path("/{id}")
